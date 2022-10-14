@@ -10,3 +10,6 @@
 - rmdir - Deleta um diretório 
 - git add * - Passa o repositório para stage
 - git commit -m "" - Commit um repositório com alterações e aplica uma mensagem
+- git pull origin main - Baixa o repositório
+- git push origin main - Manda o repositório para remoto
+- git clone [link] - Clona um repositório
