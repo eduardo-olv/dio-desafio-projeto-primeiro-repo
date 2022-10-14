@@ -8,3 +8,5 @@
 - dir ou ls - Exibe diretórios e arquivos 
 - mkdir - Cria um diretório
 - rmdir - Deleta um diretório 
+- git add * - Passa o repositório para stage
+- git commit -m "" - Commit um repositório com alterações e aplica uma mensagem
