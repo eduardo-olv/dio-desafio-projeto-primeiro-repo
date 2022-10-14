@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="calculadora">
+        <h1>Calculadora de Média</h1>
+        <h2 id="stat">Comece a rezar</h2>
+
+        <div>
+            <!--Nota da Prova -->
+            <div>
+                <label for="quest">
+                    <strong>Nº de questões:</strong>
+                </label>
+
+                <select name="quest" id="quest" oninput="prova();changeValue();">
+                    <option value="5">5</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <div id="tela">
+                <label for="acertos">
+                    <strong>Acertos na prova:</strong>
+                </label>
+
+                <input type="range" value ="0" min="0" max="10" id="acertos" oninput="prova()">
+                <span id="valoracert">0</span>
+            </div>
+
+            <div>
+                <label for="nota2">
+                    <strong>Nota da Prova:</strong>
+                </label>
+
+                <span id="nota2"></span>
+            </div>
+
+        </div> <!-- Fim Nota da Prova-->
+
+        <div>
+            <!--Atividades-->
+            <label for="nota1" id="tela">
+                <strong>Nota das Atividades:</strong>
+            </label>
+
+            <input type="range" value="0" min="0" max="10" id="nota1" oninput="mudarNota(this.value)">
+            <span id="valor">0</span>
+
+        </div>
+        <!--Fim Atividades-->
+
+        <div>
+            <!--Média-->
+            <input type="button" value="Calcular" id="botao" onclick="calcular()">
+
+            <label for="media">
+                <strong>Media:</strong>
+            </label>
+
+            <span id="media"></span>
+
+        </div>
+        <!--Fim Média-->
+
+
+
+        <img src="imagens/joia.png" alt="" id="image">
+
+    </div>
+</body>
+
+</html>
